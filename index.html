@@ -9,20 +9,20 @@
   <body>
     <h1 id="heading">Writing Board</h1>
     <div id="tools">
-      <p>Drawing Tools</p>
+      <p>Tools & Controls</p>
       <div class="colorInput">
-        <label for="color">Color</label>
+        <label for="strokeColor">Brush Color</label>
         <input id="strokeColor" type="color" />
       </div>
       <div class="brushSizeInput">
-        <label for="brushSize">Brush</label>
-        <input id="brushsize" type="range" value="5" min="1" max="50" />
+        <label for="brushSize">Brush Size</label>
+        <input id="brushSize" type="range" value="5" min="1" max="50" />
       </div>
-      <button class="button" id="pen">🖊️Pen</button>
-      <button class="button" id="eraser">🧼Eraser</button>
-      <button class="button" id="square">⬛Draw Square</button>
-      <button class="button" id="cleaner">🧹Full Clean Up</button>
-      <button class="button" id="downloadImg">⬇️Download Image</button>
+      <button class="button activeBtn" id="pen">✏️ Brush</button>
+      <button class="button" id="eraser">🧼 Eraser</button>
+      <button class="button" id="square">⬛ Draw Square</button>
+      <button class="button" id="cleaner">🧹 Clear Canvas</button>
+      <button class="button" id="downloadImg">⬇️ Save Image</button>
     </div>
     <canvas id="canvas"></canvas>
   </body>
