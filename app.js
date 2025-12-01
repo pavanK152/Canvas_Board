@@ -54,7 +54,13 @@ cleanBtn.addEventListener("click", function () {
 });
 
 downloadBtn.addEventListener("click", function () {
-  const link = ctx.toDataURL("image/png");
+  const link = canvas.toDataURL("image/png");
+  const anchorTag = document.createElement("a");
+  anchorTag.href = link;
+  anchorTag.download = "Drawing.png";
+  document.body.appendChild(anchorTag);
+  anchorTag.click();
+  document.body.removeChild(anchorTag);
 });
 
 canvas.addEventListener("mousedown", startDraw);
