@@ -8,21 +8,21 @@
   </head>
   <body>
     <h1 id="heading">Writing Board</h1>
-    <div class="tools">
+    <div id="tools">
       <p>Drawing Tools</p>
       <div class="colorInput">
         <label for="color">Color</label>
         <input id="strokeColor" type="color" />
       </div>
       <div class="brushSizeInput">
-        <label for="brushSize">Size</label>
-        <input id="brushsize" type="range" />
+        <label for="brushSize">Brush</label>
+        <input id="brushsize" type="range" value="5" min="1" max="50" />
       </div>
-      <button id="pen">🖊️Pen</button>
-      <button id="eraser">🧼Eraser</button>
-      <button id="square">⬛Draw Square</button>
-      <button id="cleaner">🧹Full Clean Up</button>
-      <button id="downloadImg">⬇️Download Image</button>
+      <button class="button" id="pen">🖊️Pen</button>
+      <button class="button" id="eraser">🧼Eraser</button>
+      <button class="button" id="square">⬛Draw Square</button>
+      <button class="button" id="cleaner">🧹Full Clean Up</button>
+      <button class="button" id="downloadImg">⬇️Download Image</button>
     </div>
     <canvas id="canvas"></canvas>
   </body>
