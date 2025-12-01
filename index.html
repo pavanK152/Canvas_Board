@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing Board</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="heading">Writing Board</h1>
+    <div class="tools">
+      <p>Drawing Tools</p>
+      <div class="colorInput">
+        <label for="color">Color</label>
+        <input id="strokeColor" type="color" />
+      </div>
+      <div class="brushSizeInput">
+        <label for="brushSize">Size</label>
+        <input id="brushsize" type="range" />
+      </div>
+      <button id="pen">🖊️Pen</button>
+      <button id="eraser">🧼Eraser</button>
+      <button id="square">⬛Draw Square</button>
+      <button id="cleaner">🧹Full Clean Up</button>
+      <button id="downloadImg">⬇️Download Image</button>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+  <script src="app.js"></script>
+</html>
